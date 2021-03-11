@@ -11,6 +11,9 @@
 
 main {
     height: calc(100% - 100px);
+
+    /* test */
+    background-color: blue;
 }
 
 nav {
@@ -18,6 +21,74 @@ nav {
     width: 220px;
     height: 100%;
     overflow: hidden;
+
+    /* test */
+    background-color: #000;
+}
+
+.logo img {
+    width: 120px;
+    padding: 10px;
+}
+
+.main-links a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    border-left: 3px solid #000;  /* dare il colore del background */
+    text-decoration: none;
+    color: #d2d2d2;
+}
+
+.main-links a:hover {
+    color: #fefefe;
+}
+
+.main-links li:first-child > a {
+    border-left: 3px solid #adff2f;
+}
+
+.main-links a > img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+/* playlist */
+.playlist-container h2 {
+    color: #fefefe;
+    font-size: 14px;
+    padding: 12px;
+}
+
+.playlist-container a {
+    color: #d2d2d2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.box-plus {
+    width: 30px;
+    height: 30px;
+    background-color: #d2d2d2;
+    display: inline-block;
+    color: #000;
+    position: relative;
+    margin-right: 10px;
+}
+
+.box-plus > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+} 
+
+.playlist-container a:hover {
+    color: #fefefe;
 }
 
 .main-content {
@@ -29,4 +100,7 @@ nav {
 
 footer {
     height: 100px;
+
+    /* test */
+    background-color: greenyellow;
 }
