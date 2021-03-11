@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    height: calc(100% - 100px);
+}
+
+nav {
+    float: left;
+    width: 220px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-content {
+    float: left;
+    width: calc(100% - 220px);
+    height: 100%;
+    overflow-y: auto;
+}
+
+footer {
+    height: 100px;
+}
