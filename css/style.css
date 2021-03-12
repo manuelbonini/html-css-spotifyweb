@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
 #app-wrapper {
     width: 100%;
     height: 100vh;
@@ -18,7 +22,7 @@ main {
 
 nav {
     float: left;
-    width: 220px;
+    width: 200px;
     height: 100%;
     overflow: hidden;
 
@@ -65,7 +69,7 @@ nav {
     min-height: 100px;
     overflow: hidden;
     flex-grow: 1;
-}
+    padding-top: 30px;}
 
 .playlist {
     height: 100%;
@@ -75,7 +79,7 @@ nav {
 .playlist-container h2 {
     color: #fefefe;
     font-size: 14px;
-    padding: 12px;
+    padding: 5px 12px;
 }
 
 .playlist-container a {
@@ -108,9 +112,49 @@ nav {
     color: #fefefe;
 }
 
+/* installa app  */
 .install-app {
+    padding: 0 15px;
     /* test  */
-    background-color: red;
+    background-color: #000;
+}
+
+.download-app {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #d2d2d2;
+    padding-bottom: 10px;
+    color: #d2d2d2;
+    font-size: 12px;
+}
+
+.download-app:hover {
+    color: #fefefe;
+}
+
+.download-app img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.profile { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fefefe;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.box-profile {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+    background-color: #808080;
+    margin-right: 10px;
 }
 
 .main-content {
@@ -124,5 +168,5 @@ footer {
     height: 100px;
 
     /* test */
-    background-color: greenyellow;
+    background-color: #282828;
 }
