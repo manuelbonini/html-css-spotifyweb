@@ -26,6 +26,12 @@ nav {
     background-color: #000;
 }
 
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .logo img {
     width: 120px;
     padding: 10px;
@@ -55,6 +61,17 @@ nav {
 }
 
 /* playlist */
+.playlist-container {
+    min-height: 100px;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.playlist {
+    height: 100%;
+    overflow-y: auto;      
+}
+
 .playlist-container h2 {
     color: #fefefe;
     font-size: 14px;
@@ -89,6 +106,11 @@ nav {
 
 .playlist-container a:hover {
     color: #fefefe;
+}
+
+.install-app {
+    /* test  */
+    background-color: red;
 }
 
 .main-content {
