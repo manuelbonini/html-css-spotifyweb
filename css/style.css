@@ -37,7 +37,7 @@ nav {
 }
 
 .logo img {
-    width: 120px;
+    width: 150px;
     padding: 10px;
 }
 
@@ -165,6 +165,48 @@ nav {
     overflow-y: auto;
 }
 
+/* upgrade */
+.upgrade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 60px;
+    width: calc(100% - 200px);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.upgrade span {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-right: 10px;
+}
+
+.upgrade span a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:767px) {
+    nav {
+        width: 80px;
+    }
+
+    .main-links ul {
+        display: none;
+    }
+    .main-content {
+        width: calc(100% - 80px);
+    }
+
+    .upgrade {
+        width: calc(100% - 80px);
+    }
+}
+
 /* FOOTER  */
 footer {
     height: 100px;
@@ -172,7 +214,7 @@ footer {
     display: flex;
     flex-direction: row;
 }
-
+/* footer left  */
 .footer-left {
     width: 200px;
     color: #808080;
@@ -201,6 +243,7 @@ footer {
     width: 100%;
 }
 
+/* footer middle  */
 .footer-middle {
     width: 300px;
     flex-grow: 1;
@@ -252,6 +295,7 @@ footer {
     align-items: center;
     color: #fefefe;
     font-size: 8px;
+    width: 70%;
 }
 
 .left-bar {
@@ -273,9 +317,9 @@ footer {
 }
 
 .footer-right .dark-bar {
-    width: 70px;
+    width: 60%;
 }
 
 .footer-right .light-bar {
-    width: 30px;
+    width: 30%;
 }
