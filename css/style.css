@@ -194,7 +194,7 @@ footer {
 }
 
 .footer-img {
-    width: 45px;
+    max-width: 45px;
 }
 
 .footer-img img {
@@ -204,8 +204,78 @@ footer {
 .footer-middle {
     width: 300px;
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
+.icons {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.icons a {
+    text-decoration: none;
+    color: #fefefe;
+}
+
+.icons .play-icon i {
+    font-size: 23px;
+}
+
+.icons i {
+    font-size: 13px;
+}
+
+/* barra di avanzamento*/
+.dark-bar {
+    height: 5px;
+    width: 300px;
+    background-color: #5a5a5a;
+    border-radius: 3px;
+}
+
+.light-bar {
+    height: 5px;
+    width: 100px;
+    background-color: #c1c1c1;
+    border-radius: 3px;
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fefefe;
+    font-size: 8px;
+}
+
+.left-bar {
+    margin-right: 20px;
+}
+
+.right-bar {
+    margin-left: 20px;
+}
+
+/* footer right */
 .footer-right {
     width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.footer-right .dark-bar {
+    width: 70px;
+}
+
+.footer-right .light-bar {
+    width: 30px;
 }
